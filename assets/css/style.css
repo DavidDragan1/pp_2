@@ -1,7 +1,20 @@
-@keyframes border-effect {
-  to {
-      width: 100%;
+@keyframes borderload {
+  from {
+    outline-style: solid;
+    outline-color: #009961;
+    width: 0%;
   }
+  to {
+    outline-style: solid;
+    outline-color: #009961;
+    width: 100%;
+  }
+}
+
+.border-effect {
+  animation-name: borderload;
+  animation-delay: 2s;
+  animation-duration: 5s;
 }
 
 .h1title {
@@ -432,7 +445,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/heroimg.jpg") top center;
   background-size: cover;
   position: relative;
 }
